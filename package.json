@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "@types/react-helmet": "^6.1.0",
     "autoprefixer": "^9.8.6",
     "gatsby": "^2.24.41",

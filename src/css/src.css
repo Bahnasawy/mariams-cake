@@ -20,6 +20,27 @@
       format("svg"); /* Legacy iOS */
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+}
+.title:before {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #2d3748;
+  margin-right: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.title:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #2d3748;
+  margin-left: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 @tailwind components;
 
 @tailwind utilities;

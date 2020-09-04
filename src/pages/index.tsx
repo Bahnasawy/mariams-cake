@@ -1,10 +1,25 @@
-import React from "react"
+import React, { useState, useRef } from "react"
 import Navbar from "../components/navbar"
+import AboutMe from "../components/aboutMe"
+import Gallery from "../components/gallery"
+import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 
 const index = () => {
+  const [posTop, setPosTop] = useState(0)
+  useScrollPosition(({ prevPos, currPos }) => {
+    if (Math.abs(currPos.y) >= 50 || Math.abs(currPos.y) == 0) {
+      setPosTop(Math.abs(currPos.y))
+    }
+  })
   return (
-    <div className="flex w-screen text-gray-900 bg-pink-300 font-cursive">
-      <Navbar />
+    <div className="text-gray-900 bg-pink-300 font-cursive max">
+      <div className="flex flex-col items-center mx-6 text-3xl">
+        <div className="sticky top-0 z-10 w-full bg-pink-300">
+          <Navbar scrollPos={posTop} />
+        </div>
+        <AboutMe />
+        <Gallery />
+      </div>
     </div>
   )
 }

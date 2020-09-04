@@ -5,8 +5,11 @@ module.exports = {
       fontFamily: {
         cursive: ["Berkshire Swash"],
       },
+      fontSize: {
+        "2xs": "0.6rem",
+      },
     },
   },
-  variants: {},
+  variants: { backgroundColor: ["responsive", "hover", "focus", "active"] },
   plugins: [],
 }
