@@ -27,7 +27,7 @@ const index = () => {
         <MessengerCustomerChat
           pageId="122129299564739"
           appId="638454893734813"
-          htmlRef={window.location.pathname}
+          htmlRef="/"
         />
       </div>
     </div>
