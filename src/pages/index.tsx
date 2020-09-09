@@ -3,6 +3,7 @@ import Navbar from "../components/navbar"
 import AboutMe from "../components/aboutMe"
 import Gallery from "../components/gallery"
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
+import MessengerCustomerChat from "react-messenger-customer-chat"
 
 const index = () => {
   const [posTop, setPosTop] = useState(0)
@@ -19,6 +20,11 @@ const index = () => {
         </div>
         <AboutMe />
         <Gallery />
+        <MessengerCustomerChat
+          pageId="<PAGE_ID>"
+          appId="<APP_ID>"
+          htmlRef="<REF_STRING>"
+        />
       </div>
     </div>
   )
