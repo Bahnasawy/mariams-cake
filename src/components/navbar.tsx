@@ -32,7 +32,7 @@ const Navbar = ({ scrollPos }: Props) => {
           </animated.p>
         </div>
         <span
-          className="text-4xl iconify"
+          className="text-4xl text-transparent stroke-current iconify"
           data-icon="entypo:dots-three-horizontal"
           data-inline="false"
         ></span>

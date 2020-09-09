@@ -7,7 +7,9 @@ const Gallery = () => {
       <p className="mb-2 title">Gallery</p>
       <div className="flex flex-col items-center w-full h-full">
         <SlideShow />
-        <hr className="text-black" />
+        <div className="w-full my-2">
+          <hr className="mx-8 border-b border-gray-900 border-solid rounded-full" />
+        </div>
         <SlideShow />
       </div>
     </div>

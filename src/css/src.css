@@ -25,20 +25,12 @@
   flex-direction: row;
 }
 .title:before {
+  @apply flex-1 mt-auto mb-auto mr-2 border-b border-gray-900 border-solid rounded-full;
   content: "";
-  flex: 1 1;
-  border-bottom: 1px solid #2d3748;
-  margin-right: 0.5rem;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 .title:after {
+  @apply flex-1 mt-auto mb-auto ml-2 border-b border-gray-900 border-solid rounded-full;
   content: "";
-  flex: 1 1;
-  border-bottom: 1px solid #2d3748;
-  margin-left: 0.5rem;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 @tailwind components;

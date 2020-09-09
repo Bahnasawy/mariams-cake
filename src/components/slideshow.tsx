@@ -1,5 +1,6 @@
 import React, { useReducer } from "react"
 import { useTransition, animated } from "react-spring"
+import Arrow from "@svgs/arrow.svg"
 
 const images = [
   "https://res.cloudinary.com/bahnasawy/image/upload/v1598821563/red-velvet-cake-slice-2-225x225_srmxtv.jpg",
@@ -36,12 +37,12 @@ const SlideShow = () => {
     config: { friction: 75 },
   })
   return (
-    <div className="flex items-center my-4 text-4xl">
+    <div className="flex items-center my-4">
       <button
-        className="mr-6 transition-opacity focus:outline-none"
+        className="w-6 h-6 mr-6 text-gray-900 fill-current focus:outline-none"
         onClick={() => dispatch("-")}
       >
-        {"<"}
+        <Arrow />
       </button>
       <div className="relative flex items-center justify-center w-64 h-64">
         {transistions.map(({ item, props, key }) => (
@@ -54,10 +55,10 @@ const SlideShow = () => {
         ))}
       </div>
       <button
-        className="ml-6 transition-opacity focus:outline-none"
+        className="w-6 h-6 ml-6 text-gray-900 transform rotate-180 fill-current focus:outline-none"
         onClick={() => dispatch("+")}
       >
-        {">"}
+        <Arrow />
       </button>
     </div>
   )

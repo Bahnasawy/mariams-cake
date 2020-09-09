@@ -621,21 +621,31 @@ video {
 }
 
 .title:before {
-  content: "";
-  flex: 1 1;
-  border-bottom: 1px solid #2d3748;
-  margin-right: 0.5rem;
+  flex: 1 1 0%;
   margin-top: auto;
   margin-bottom: auto;
+  margin-right: 0.5rem;
+  border-bottom-width: 1px;
+  --border-opacity: 1;
+  border-color: #1a202c;
+  border-color: rgba(26, 32, 44, var(--border-opacity));
+  border-style: solid;
+  border-radius: 9999px;
+  content: "";
 }
 
 .title:after {
-  content: "";
-  flex: 1 1;
-  border-bottom: 1px solid #2d3748;
-  margin-left: 0.5rem;
+  flex: 1 1 0%;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: 0.5rem;
+  border-bottom-width: 1px;
+  --border-opacity: 1;
+  border-color: #1a202c;
+  border-color: rgba(26, 32, 44, var(--border-opacity));
+  border-style: solid;
+  border-radius: 9999px;
+  content: "";
 }
 
 .container {
