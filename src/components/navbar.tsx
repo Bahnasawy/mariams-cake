@@ -21,10 +21,19 @@ const Navbar = ({ scrollPos }: Props) => {
           <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>{" "}
         </Helmet>
         <div className="flex flex-row">
-          <div className="mr-1">
+          <a
+            className="mr-2"
+            href="https://www.facebook.com/Mariamsgotcake/"
+            target="_blank"
+          >
             <Facebook />
-          </div>
-          <Insta />
+          </a>
+          <a
+            href="https://www.instagram.com/invites/contact/?i=105sqz3hgn12i&utm_content=gvhqp9n"
+            target="_blank"
+          >
+            <Insta />
+          </a>
         </div>
         <div className="flex flex-row items-center h-12">
           <animated.p style={{ fontSize, paddingTop }}>
@@ -32,7 +41,7 @@ const Navbar = ({ scrollPos }: Props) => {
           </animated.p>
         </div>
         <span
-          className="text-4xl text-transparent stroke-current iconify"
+          className="text-4xl text-transparent s\ke-current iconify"
           data-icon="entypo:dots-three-horizontal"
           data-inline="false"
         ></span>
