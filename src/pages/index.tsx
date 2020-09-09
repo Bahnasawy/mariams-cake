@@ -25,6 +25,11 @@ const index = () => {
         </div>
         <AboutMe />
         <Gallery />
+        <MessengerCustomerChat
+          pageId="<PAGE_ID>"
+          appId="<APP_ID>"
+          htmlRef="<REF_STRING>"
+        />
       </div>
     </div>
   )
