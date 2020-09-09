@@ -37,12 +37,12 @@ const SlideShow = () => {
   })
   return (
     <div className="flex items-center my-4 text-4xl">
-      <p
+      <button
         className="mr-6 transition-opacity focus:outline-none"
         onClick={() => dispatch("-")}
       >
         {"<"}
-      </p>
+      </button>
       <div className="relative flex items-center justify-center w-64 h-64">
         {transistions.map(({ item, props, key }) => (
           <animated.img
@@ -53,12 +53,12 @@ const SlideShow = () => {
           />
         ))}
       </div>
-      <p
+      <button
         className="ml-6 transition-opacity focus:outline-none"
         onClick={() => dispatch("+")}
       >
         {">"}
-      </p>
+      </button>
     </div>
   )
 }
