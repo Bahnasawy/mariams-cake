@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.tsx", "./src/**/*.js"],
   theme: {
     extend: {
       fontFamily: {
@@ -12,4 +12,8 @@ module.exports = {
   },
   variants: { backgroundColor: ["responsive", "hover", "focus", "active"] },
   plugins: [],
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true,
+  },
 }
