@@ -3,6 +3,7 @@ import Navbar from "@components/navbar"
 import AboutMe from "@components/aboutMe"
 import Gallery from "@components/gallery"
 import Menu from "@components/menu"
+import Mail from "@components/mail"
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 import MessengerCustomerChat from "react-messenger-customer-chat"
 import Helmet from "@components/seo"
@@ -24,6 +25,7 @@ const index = () => {
         <AboutMe />
         <Gallery />
         <Menu />
+        <Mail />
         <MessengerCustomerChat
           pageId="122129299564739"
           appId="638454893734813"

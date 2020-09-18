@@ -1,12 +1,16 @@
 import React from "react"
-import baker from "@imgs/baker.png"
+import baker from "@imgs/baker.jpg"
 
 const AboutMe = () => {
   return (
     <div className="w-full mt-3">
       <p className="title">About Me</p>
       <div className="flex flex-col items-center">
-        <img src={baker} alt="Mariam" className="w-48 rounded-full" />
+        <img
+          src={baker}
+          alt="Mariam"
+          className="object-cover w-48 h-48 rounded-full"
+        />
         <p className="mt-4 text-xs text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus eget
           faucibus convallis in vitae. Sagittis, nulla rutrum at tristique in
